@@ -155,7 +155,7 @@ button {
 
 .hero-container {
 	background-color: var(--hero-banner-container);
-	background-image: url("/images/Img-hero-background.jpg");
+	background-image: url("./images/img-hero-background.jpg");
 	background-position: center;
 	background-size: cover;
 	box-shadow: inset 0 0 0 2000px rgba(47, 48, 58, 0.4);
