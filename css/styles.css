@@ -16,6 +16,7 @@
 	--footer-container: #2f303a;
 	--team: #f5f4fa;
 	--portfolio-button: #f5f4fa;
+	--icon-fill-color: #afb1b8;
 }
 body {
 	color: var(--black);
@@ -137,17 +138,18 @@ button {
 	color: var(--grey);
 }
 .menu-nav-link:hover,
-.menu-nav-link:focus,
-.menu-contact-link:hover,
-.menu-contact-link:focus {
+.menu-nav-link:focus {
 	color: var(--light-blue);
 }
 .menu-icon {
 	fill: var(--grey);
 	margin-right: 10px;
 }
-.menu-icon:hover,
-.menu-icon:focus {
+.menu-contact-item:hover a,
+.menu-contact-item:hover svg,
+.menu-contact-item:focus a,
+.menu-contact-item:focus svg {
+	color: var(--light-blue);
 	fill: var(--light-blue);
 }
 
@@ -205,6 +207,7 @@ button {
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	margin-bottom: 10px;
+	margin-top: 30px;
 }
 .features-text {
 	font-size: 14px;
@@ -213,10 +216,11 @@ button {
 	color: var(--grey);
 }
 .features-div-icon {
+	width: 270px;
+	height: 120px;
 	padding: 25px 100px;
 	background-color: var(--team);
 	border-radius: 4px;
-	margin-bottom: 30px;
 }
 
 /* about us, czym się zajmujemy, same zdjęcia + tytuł ============================= */
@@ -287,9 +291,70 @@ button {
 }
 .figcaption-team-item {
 	padding-top: 30px;
+	padding-bottom: 16px;
+}
+.social-link {
+	fill: var(--icon-fill-color);
+}
+.social-icon-item {
+	width: 44px;
+	height: 44px;
+	padding: 12px;
+	margin-right: 10px;
+}
+.social-icon-item:last-child {
+	margin-right: 0;
+}
+.social-media-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	padding-bottom: 30px;
 }
+.social-icon-item:hover,
+.social-icon-item:focus,
+.social-icon-item:hover a,
+.social-icon-item:focus a {
+	background-color: var(--light-blue);
+	border-radius: 50%;
+	fill: var(--white);
+}
 
+/* nasi klinci  ================================================= */
+.clients-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.clients-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+	margin-bottom: 50px;
+}
+.client-item {
+	width: 170px;
+	height: 92px;
+	border: 1px solid var(--icon-fill-color);
+	border-radius: 4px;
+	margin-right: 30px;
+	text-align: center;
+}
+.client-item:last-child {
+	margin-right: 0;
+}
+.client-icon {
+	fill: var(--icon-fill-color);
+}
+.client-item:hover svg,
+.client-item:focus svg,
+.client-item:hover,
+.client-item:focus {
+	border-color: var(--light-blue);
+	fill: var(--light-blue);
+}
 /*portfolio ===================================================================== */
 .button-nav {
 	display: flex;
