@@ -142,15 +142,12 @@ button {
 	color: var(--light-blue);
 }
 .menu-icon {
-	fill: var(--grey);
+	fill: currentColor;
 	margin-right: 10px;
 }
 .menu-contact-item:hover a,
-.menu-contact-item:hover svg,
-.menu-contact-item:focus a,
-.menu-contact-item:focus svg {
+.menu-contact-item:focus a {
 	color: var(--light-blue);
-	fill: var(--light-blue);
 }
 
 /* główny tytuł strony hero ================================================== */
@@ -505,8 +502,6 @@ footer {
 .footer-social-container {
 	padding-top: 20px;
 	display: flex;
-	/* justify-content: center;
-	align-items: center; */
 }
 .footer-social-icon-item:hover,
 .footer-social-icon-item:focus,
