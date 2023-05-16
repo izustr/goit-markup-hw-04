@@ -136,6 +136,8 @@ button {
 	line-height: 1.15;
 	letter-spacing: 0.02em;
 	color: var(--grey);
+	display: flex;
+	align-items: center;
 }
 .menu-nav-link:hover,
 .menu-nav-link:focus {
@@ -145,8 +147,8 @@ button {
 	fill: currentColor;
 	margin-right: 10px;
 }
-.menu-contact-item:hover a,
-.menu-contact-item:focus a {
+.menu-contact-link:hover,
+.menu-contact-link:focus {
 	color: var(--light-blue);
 }
 
@@ -163,6 +165,9 @@ button {
 	background-position: center;
 	background-size: cover;
 	padding: 200px 0;
+	max-width: 1600px;
+	height: 600px;
+	margin: 0 auto;
 }
 .hero-title {
 	font-weight: 900;
@@ -219,9 +224,11 @@ button {
 .features-div-icon {
 	width: 270px;
 	height: 120px;
-	padding: 25px 100px;
 	background-color: var(--team);
 	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /* about us, czym się zajmujemy, same zdjęcia + tytuł ============================= */
@@ -276,7 +283,7 @@ button {
 	color: var(--grey);
 	margin-top: 10px;
 }
-.team-list figure {
+.team-list > li {
 	width: 270px;
 	background: var(--white);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -292,15 +299,20 @@ button {
 }
 .figcaption-team-item {
 	padding-top: 30px;
-	padding-bottom: 16px;
+	padding-bottom: 30px;
+	align-items: center;
 }
 .social-link {
 	fill: var(--icon-fill-color);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .social-icon-item {
 	width: 44px;
 	height: 44px;
-	padding: 12px;
 	margin-right: 10px;
 }
 .social-icon-item:last-child {
@@ -310,12 +322,10 @@ button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-bottom: 30px;
+	margin-top: 16px;
 }
-.social-icon-item:hover,
-.social-icon-item:focus,
-.social-icon-item:hover a,
-.social-icon-item:focus a {
+.social-link:hover,
+.social-link:focus {
 	background-color: var(--light-blue);
 	border-radius: 50%;
 	fill: var(--white);
@@ -335,25 +345,26 @@ button {
 	letter-spacing: 0.03em;
 	margin-bottom: 50px;
 }
-.client-item {
+.client-link {
 	width: 170px;
 	height: 92px;
-	border: 1px solid var(--icon-fill-color);
-	padding: 17.71px 32px 14.25px 32px;
+	border: 1px solid currentColor;
+	color: var(--icon-fill-color);
+	fill: currentColor;
 	border-radius: 4px;
-	margin-right: 30px;
 	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.client-item {
+	margin-right: 30px;
 }
 .client-item:last-child {
 	margin-right: 0;
 }
-.client-icon {
-	fill: var(--icon-fill-color);
-}
-.client-item:hover svg,
-.client-item:focus svg,
-.client-item:hover,
-.client-item:focus {
+.client-link:hover,
+.client-link:focus {
 	border-color: var(--light-blue);
 	fill: var(--light-blue);
 }
@@ -392,6 +403,7 @@ button {
 		0px 2px 2px rgba(0, 0, 0, 0.12);
 	border-radius: 4px;
 }
+
 /* portfolio images =============================================================== */
 
 .portfolio-img-title {
@@ -449,7 +461,6 @@ footer {
 	line-height: 1.2;
 	letter-spacing: 0.03em;
 	color: var(--light-blue);
-	margin-right: 171px;
 }
 .footer-logo-title {
 	color: var(--white);
@@ -476,6 +487,10 @@ footer {
 }
 .footer-flex {
 	display: flex;
+	align-items: baseline;
+}
+.footer-div {
+	margin-right: 70px;
 }
 .footer-social-title {
 	font-weight: 700;
@@ -487,29 +502,31 @@ footer {
 }
 .footer-social-link {
 	fill: var(--white);
-}
-.footer-social-icon-item {
 	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer-social-icon-item {
 	width: 44px;
 	height: 44px;
-	padding: 12px;
 	margin-right: 10px;
 }
 .footer-social-icon-item:last-child {
 	margin-right: 0;
 }
 .footer-social-container {
-	padding-top: 20px;
+	margin-top: 20px;
 	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-.footer-social-icon-item:hover,
-.footer-social-icon-item:focus,
-.footer-social-icon-item:hover a,
-.footer-social-icon-item:focus a {
+
+.footer-social-link:hover,
+.footer-social-link:focus {
 	background-color: var(--light-blue);
 	border-radius: 50%;
-}
-.footer-social-div {
-	margin-top: 12px;
 }
